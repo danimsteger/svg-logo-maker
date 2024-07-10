@@ -29,18 +29,14 @@ inquirer
       name: "shapeColor",
     },
   ])
-  .then((data) => {
-    // const mySVG = `I want text "${data.text}" in ${data.textColor} inside of a ${data.shape} that is ${data.shapeColor}`;
+  .then((answers) => {
+    const { text, textColor, shapeColor } = answers;
 
-    //     const mySVG = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    this.text = text;
+    this.textColor = textColor;
+    this.shapeColor = shapeColor;
 
-    //   <${data.shape} cx="150" cy="100" r="80" fill="${data.shapeColor}" />
-
-    //   <text x="150" y="125" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
-
-    // </svg>`;
-
-    const mySVG = createFile(this.shape);
+    const mySVG = createFile(this.text, this.textColor, this.shapeColor);
 
     fs.writeFile("./examples/logo.svg", mySVG, (err) => {
       if (err) {
