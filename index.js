@@ -30,13 +30,14 @@ inquirer
     },
   ])
   .then((answers) => {
-    const { text, textColor, shapeColor } = answers;
+    const { shape, text, textColor, shapeColor } = answers;
 
+    this.shape = shape;
     this.text = text;
     this.textColor = textColor;
     this.shapeColor = shapeColor;
 
-    const mySVG = createFile(this.text, this.textColor, this.shapeColor);
+    const mySVG = createFile(shape, text, textColor, shapeColor);
 
     fs.writeFile("./examples/logo.svg", mySVG, (err) => {
       if (err) {
