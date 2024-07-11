@@ -109,4 +109,4 @@ Once the tests have been run, it should display the following to show that all t
 
 This project was entirely created by Danielle Steger. To complete this project, several articles on "MDN Web Docs" and "W3Schools" were referenced. Additionally, referenced materials provided by edX Boot Camps LLC were referenced. This project was completed with the use of node and several npm modules including Inquirer8.2.4, Colors, jest and their corresponding documentation was referenced as well.
 
-To create a maximum character length for the text input, Inquirer MaxLength-Input-Prompt was used and the documenation that was referenced to do so is linked [here](https://www.npmjs.com/package/inquirer-maxlength-input-prompt)
+To create a maximum character length for the text input, Inquirer MaxLength-Input-Prompt was used and the documentation that was referenced to do so is linked [here](https://www.npmjs.com/package/inquirer-maxlength-input-prompt)
