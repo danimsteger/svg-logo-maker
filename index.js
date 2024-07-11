@@ -1,16 +1,20 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const MaxLengthInputPrompt = require("inquirer-maxlength-input-prompt");
 const colors = require("colors");
 const createFile = require("./lib/file");
+
+inquirer.registerPrompt("maxlength-input", MaxLengthInputPrompt);
 
 inquirer
   .prompt([
     {
-      type: "input",
+      type: "maxlength-input",
       message: colors.white.bold(
         "Please enter the text for your logo. (You can add up to 3 characters)"
       ),
       name: "text",
+      maxLength: 3,
     },
     {
       type: "input",
