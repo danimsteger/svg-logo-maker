@@ -18,7 +18,7 @@ This project involved creating a command-line application to dynamically generat
 
 ## Installation
 
-o view the code of this project, you can clone this repository using the following commands in your command line:
+To view the code of this project, you can clone this repository using the following commands in your command line:
 
 ### Clone this repository
 
@@ -64,9 +64,9 @@ code .
 
 ## Usage
 
-To view a video walkthrough of this application, click [here](INSERT LINK TO VIDEO)
+To view a video walkthrough of this application, click [here](https://drive.google.com/file/d/1iyjGkgTVQJsaJUbGd0j2oZHtBPWN2dnX/view).
 
-To view the program, navigate to the cloned reposity and run the following command in your terminal to invoke the application:
+To view the program, navigate to the cloned repository and run the following command in your terminal to invoke the application:
 
 ```
 node index
@@ -74,7 +74,7 @@ node index
 
 This will display the prompts in the terminal, one question at a time. By using Inquirer MaxLength-Input-Prompt, the application will only allow you to add a maximum of three characters for the text input for the logo.
 
-For the text-color and shape-color prompts, users can enter a color by its hexadecimal number or by entering any of the following colors: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow.
+For the text-color and shape-color prompts, users can enter a color by its hexadecimal number or by entering any of the following colors: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow. If no color is inputed or if an invalid color or hexidecimal number is inputed, the color will default to black.
 
 For the shape prompt, users select from a list of three shapes: circle, square, or triangle.
 
@@ -82,7 +82,7 @@ For the shape prompt, users select from a list of three shapes: circle, square, 
 
 ## Tests
 
-Several tests were created to test the code for creating the different shape types for the SVG. To run the tests, make sure that Jest is installed. If it isn't, install using the following command in your terminal:
+Several tests were created to test the code for creating the different shapes for the SVG and creating the SVG file content. To run the tests, make sure that Jest is installed. If it isn't, install using the following command in your terminal:
 
 ```
 npm install jest --save-dev
@@ -107,6 +107,6 @@ Once the tests have been run, it should display the following to show that all t
 
 ## Credits
 
-This project was entirely created by Danielle Steger. To complete this project, several articles on "MDN Web Docs" and "W3Schools" were referenced. Additionally, referenced materials provided by edX Boot Camps LLC were referenced. This project was completed with the use of node and several npm modules including Inquirer8.2.4, Colors, jest and their corresponding documentation was referenced as well.
+This project was entirely created by Danielle Steger. To complete this project, several articles on "MDN Web Docs" and "W3Schools" were referenced. Additionally, materials provided by edX Boot Camps LLC were referenced. This project was completed with the use of node and several npm modules including Inquirer8.2.4, Colors, Jest and their corresponding documentation was referenced as well.
 
-To create a maximum character length for the text input, Inquirer MaxLength-Input-Prompt was used and the documentation that was referenced to do so is linked [here](https://www.npmjs.com/package/inquirer-maxlength-input-prompt)
+To create a maximum character length for the text input, Inquirer MaxLength-Input-Prompt was used and the documentation that was referenced to do so is linked [here](https://www.npmjs.com/package/inquirer-maxlength-input-prompt).
